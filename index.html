@@ -4,24 +4,159 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kore.ai Chatbot Integration</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Airline Services</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
 
-    <!-- Load Kore.ai Web SDK from CDN with version number -->
-    <script src='https://cdn.jsdelivr.net/npm/kore-web-sdk@11.1.0/dist/umd/kore-web-sdk-umd-chat.min.js'></script>
+        /* Navbar */
+        nav {
+            background-color: #003366;
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
 
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('https://www.example.com/airplane.jpg') no-repeat center center/cover;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3em;
+        }
+
+        .hero p {
+            font-size: 1.5em;
+        }
+
+        /* Services Section */
+        .services {
+            padding: 3em;
+            background-color: white;
+            text-align: center;
+        }
+
+        .services h2 {
+            color: #003366;
+        }
+
+        .services-container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 2em;
+        }
+
+        .service {
+            width: 30%;
+            padding: 1em;
+            background-color: #e6f2ff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .service h3 {
+            color: #003366;
+        }
+
+        /* Chatbot Section */
+        .chatbot {
+            padding: 2em;
+            text-align: center;
+            background-color: #003366;
+            color: white;
+        }
+
+        .chatbot button {
+            padding: 1em 2em;
+            background-color: #ff9900;
+            border: none;
+            color: white;
+            font-size: 1.2em;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #003366;
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
-    <!-- Add any content you want here -->
 
-    <h1>Welcome to Our Website</h1>
-    <p>Click the chatbot icon to get assistance.</p>
+    <!-- Navbar -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#chatbot">Chat with Us</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
-    <!-- Configure the Kore.ai chatbot -->
-    <script>
-        KoreChatSDK.chatConfig.botOptions.API_KEY_CONFIG.KEY = 'e003cefbf1fe47fbb03b52397acad041e42d33ee8d034651803013c4c14884c5ste7';
-        new KoreChatSDK.chatWindow().show(KoreChatSDK.chatConfig);
-    </script>
+    <!-- Hero Section -->
+    <div class="hero">
+        <div>
+            <h1>Welcome to SkyHigh Airlines</h1>
+            <p>Your journey, our priority!</p>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <h2>Our Services</h2>
+        <div class="services-container">
+            <div class="service">
+                <h3>Flight Booking</h3>
+                <p>Book domestic and international flights at the best prices.</p>
+            </div>
+            <div class="service">
+                <h3>Flight Status</h3>
+                <p>Get real-time updates on flight status and schedules.</p>
+            </div>
+            <div class="service">
+                <h3>Special Offers</h3>
+                <p>Avail exclusive discounts and special offers on all flights.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chatbot Section -->
+    <section class="chatbot" id="chatbot">
+        <h2>Need Help?</h2>
+        <p>Chat with our AI assistant to get flight details, booking information, and more!</p>
+        <button onclick="openChat()">Chat Now</button>
+    </section>
+
+    <!-- Chatbot Integration Script -->
+    <script src='https://cdn.jsdelivr.net/npm/kore-web-sdk@11.1.0/dist/umd/kore-web-sdk-umd-chat.min.js'></script>
+    <script> KoreChatSDK.chatConfig.botOptions.API_KEY_CONFIG.KEY = 'de7fe9e1a38744738d5b49de6a8a3c24aac751e6f4d743a183388c81ccc07d5bst72'; new KoreChatSDK.chatWindow().show(KoreChatSDK.chatConfig); </script>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 SkyHigh Airlines. All Rights Reserved.</p>
+    </footer>
 
 </body>
 
