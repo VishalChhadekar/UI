@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kore.ai Chatbot Integration</title>
+
+    <!-- Load Kore.ai Web SDK from CDN with version number -->
+    <script src='https://cdn.jsdelivr.net/npm/kore-web-sdk@11.1.0/dist/umd/kore-web-sdk-umd-chat.min.js'></script>
+
+</head>
+
+<body>
+    <!-- Add any content you want here -->
+
+    <h1>Welcome to Our Website</h1>
+    <p>Click the chatbot icon to get assistance.</p>
+
+    <!-- Configure the Kore.ai chatbot -->
+    <script>
+        KoreChatSDK.chatConfig.botOptions.API_KEY_CONFIG.KEY = 'e003cefbf1fe47fbb03b52397acad041e42d33ee8d034651803013c4c14884c5ste7';
+        new KoreChatSDK.chatWindow().show(KoreChatSDK.chatConfig);
+    </script>
+
+</body>
+
+</html>
