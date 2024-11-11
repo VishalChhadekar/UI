@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm Vishal Chhadekar</h1>
-<div align="center">![](http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=VishalChhadekar&theme=default)</div>
+![](http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=VishalChhadekar&theme=default)
 <h3 align="center">A passionate frontend developer from India</h3>
 
 - 🔭 I’m currently working on **TravelMate**
