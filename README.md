@@ -64,3 +64,5 @@
   <a href="https://babeljs.io/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/babeljs/babeljs-icon.svg" alt="Babel" width="40" height="40"/> </a>
 </p>
 
+![](http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=VishalChhadekar&theme=default)
+
